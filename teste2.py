@@ -5,7 +5,7 @@ def Menu():
         [1] Criar uma lista: 
         [2] Calculadora Básica: 
         [3] Conversor
-        [4] 
+        [4] Em desenvolvimento
         ''')
 
     Op = int(input("Escolha uma opção: "))
