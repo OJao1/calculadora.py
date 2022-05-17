@@ -4,8 +4,7 @@ def Menu():
     print('''
         [1] Criar uma lista: 
         [2] Calculadora Básica: 
-        [3] Conversor
-        [4] Em desenvolvimento
+        [3] Conversor:
         ''')
 
     Op = int(input("Escolha uma opção: "))
