@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+"""
+Calculadora
+Autor: João Victor
+Função: Realizar Operações Matemáticas:Soma, Subtração, Divisão, Multiplicação, Potenciação e Fatorial
+"""
+from math import factorial
+
+
+print("-----  CALCULADORA V2.0  -----")
+
+sair = False 
+
+while  sair == False:
+
+	class CalculadoraBasica:
+
+		def soma():
+			num1 = int(input("Digite o primeiro número: "))
+			num2 = int(input("Digite o segundo número: "))
+			ResultadoSoma = num1 + num2
+			print("A soma entre {} e {} é igual {}".format(num1,num2,ResultadoSoma))
+
+		def subtracao():
+			num1 = int(input("Digite o primeiro número: "))
+			num2 = int(input("Digite o segundo número: ")) 
+			ResultadoSubtracao = num1 - num2
+			print("A subtração entre {} e {} é igual {}".format(num1,num2,ResultadoSubtracao))
+
+		def multiplicacao():
+			num1 = int(input("Digite o primeiro número: "))
+			num2 = int(input("Digite o segundo número: ")) 
+			ResultadoMultiplicacao = num1 * num2
+			print("A multiplicação entre {} e {} é igual {}".format(num1,num2,ResultadoMultiplicacao))
+
+		def divisao():
+			num1 = int(input("Digite o primeiro número: "))
+			num2 = int(input("Digite o segundo número: "))
+			ResultadoDivisao = num1 / num2
+			print("A divisao entre {} e {} é igual {}".format(num1,num2,ResultadoDivisao))
+
+		def fatorial():
+			num = int(input("Digite um número: "))
+			if num == 1:
+				print(1)
+			else:
+				resFat = num * factorial(num-1)
+			print("A fatorial de {} é {}".format(num, resFat))
+			
+		def potenciacao():
+			num1 = int(input("Digite o primeiro número: "))
+			num2 = int(input("Digite o segundo número: "))
+			ResultadoPotenciacao = num1 ** num2
+			print("O número {} elevado a {} é igual {}".format(num1,num2,ResultadoPotenciacao))
+
+	x = input('Escolha um Operador: (+, -, *, /, !, **)')
+	if x == '+':
+		CalculadoraBasica.soma()
+	elif x == '-':
+		CalculadoraBasica.subtracao()
+	elif x == '*':
+		CalculadoraBasica.multiplicacao()
+	elif x == '/':
+		CalculadoraBasica.Divisao()
+	elif x == '!':
+		CalculadoraBasica.fatorial()
+	elif x == '**':
+		CalculadoraBasica.potenciacao()
+
+	teste = input("Deseja continuar (n/s): ")
+	if teste == "n":
+		sair = True 
+
