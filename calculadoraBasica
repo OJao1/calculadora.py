@@ -53,7 +53,8 @@ while  sair == False:
 			ResultadoPotenciacao = num1 ** num2
 			print("O número {} elevado a {} é igual {}".format(num1,num2,ResultadoPotenciacao))
 
-	x = input('Escolha um Operador: (+, -, *, /, !, **)')
+	x = input('''+ (soma), - (subtração), * (multiplicação), / (divisão), ! (fatorial), ** (potenciação)
+	Escolha um Operador: ''')
 	if x == '+':
 		CalculadoraBasica.soma()
 	elif x == '-':
