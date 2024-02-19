@@ -62,7 +62,7 @@ while  sair == False:
 	elif x == '*':
 		CalculadoraBasica.multiplicacao()
 	elif x == '/':
-		CalculadoraBasica.Divisao()
+		CalculadoraBasica.divisao()
 	elif x == '!':
 		CalculadoraBasica.fatorial()
 	elif x == '**':
